@@ -12,6 +12,7 @@ public class NotificationService {
 
     private final NotificationRepository notificationRepository;
 
+    // here you can implement notification services like twilio or firebase
     public void send(NotificationRequest notificationRequest) {
         Notification notification = Notification.builder()
                 .toCustomerId(notificationRequest.toCustomerId())

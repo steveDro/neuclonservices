@@ -5,24 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef6dbc6f-e79b-45d5-91a9-d3e43f9bb88e" name="Changes" comment="implement a service discovery using eureka">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/neucloncorporation/clients/notification/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/neucloncorporation/clients/notification/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/neucloncorporation/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/neucloncorporation/amqp/RabbitMQMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/java/com/neucloncorporation/apigw/ApiGWApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/neucloncorporation/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/neucloncorporation/customer/CustomerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/neucloncorporation/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/neucloncorporation/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/neucloncorporation/customer/CustomerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/neucloncorporation/customer/CustomerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/target/classes/com/neucloncorporation/customer/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/neucloncorporation/customer/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/neucloncorporation/clients/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/neucloncorporation/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/neucloncorporation/clients/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/Application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/Application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/Application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/neucloncorporation/fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/neucloncorporation/fraud/FraudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/neucloncorporation/fraud/FraudController.class" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/com/neucloncorporation/fraud/FraudController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/java/com/neucloncorporation/notification/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/neucloncorporation/notification/NotificationApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/com/neucloncorporation/notification/NotificationApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/neucloncorporation/notification/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/com/neucloncorporation/notification/NotificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/target/classes/com/neucloncorporation/notification/NotificationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/notification/target/classes/com/neucloncorporation/notification/NotificationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +59,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -48,12 +74,12 @@
     &quot;assignee&quot;: &quot;steveDro&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/steveDro/neuclonservices",
-    "accountId": "b0a04484-fbd0-4420-89f3-51b595c35654"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/steveDro/neuclonservices&quot;,
+    &quot;accountId&quot;: &quot;b0a04484-fbd0-4420-89f3-51b595c35654&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -81,6 +107,8 @@
     "Docker.docker-compose.yml.mysql: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.pgadmin-fraud: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.postgres-fraud: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.rabbitmq: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.zipkin: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Maven.neuclonservices [clean].executor": "Run",
     "Maven.neuclonservices [validate].executor": "Run",
@@ -89,6 +117,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ApiGWApplication.executor": "Run",
     "Spring Boot.CustomerApplication (1).executor": "Run",
     "Spring Boot.CustomerApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication (1).executor": "Run",
@@ -96,7 +125,7 @@
     "Spring Boot.FraudApplication (1).executor": "Run",
     "Spring Boot.FraudApplication 2.executor": "Run",
     "Spring Boot.FraudApplication.executor": "Run",
-    "Spring Boot.NotificationApplication.executor": "Run",
+    "Spring Boot.NotificationApplication.executor": "Debug",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -138,13 +167,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication">
-    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="customer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neucloncorporation.customer.CustomerApplication" />
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
+    <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="apigw" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neucloncorporation.apigw.ApiGWApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neucloncorporation.customer.*" />
+          <option name="PATTERN" value="com.neucloncorporation.apigw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neucloncorporation.eurekaserver.EurekaServerApplication" />
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.neucloncorporation.customer.CustomerApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neucloncorporation.eurekaserver.*" />
+          <option name="PATTERN" value="com.neucloncorporation.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,18 +226,28 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.CustomerApplication" />
+      <item itemvalue="Spring Boot.ApiGWApplication" />
       <item itemvalue="Spring Boot.FraudApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.CustomerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.NotificationApplication" />
         <item itemvalue="Spring Boot.FraudApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.ApiGWApplication" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +272,9 @@
       <workItem from="1722650802736" duration="38620000" />
       <workItem from="1723171014337" duration="4036000" />
       <workItem from="1723179679515" duration="3963000" />
-      <workItem from="1723185027093" duration="11007000" />
+      <workItem from="1723185027093" duration="29123000" />
+      <workItem from="1723409089944" duration="13026000" />
+      <workItem from="1723770387145" duration="14639000" />
     </task>
     <task id="LOCAL-00001" summary="add fraud microservice">
       <option name="closed" value="true" />
@@ -267,7 +308,39 @@
       <option name="project" value="LOCAL" />
       <updated>1723186694845</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implement a service discovery using eureka">
+      <option name="closed" value="true" />
+      <created>1723247993679</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723247993679</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implement a service discovery using eureka">
+      <option name="closed" value="true" />
+      <created>1723248010533</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723248010533</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implement a service discovery using eureka">
+      <option name="closed" value="true" />
+      <created>1723248083338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723248083338</updated>
+    </task>
+    <task id="LOCAL-00008" summary="implement a service discovery using eureka">
+      <option name="closed" value="true" />
+      <created>1723248172611</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723248172611</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,5 +362,16 @@
     <MESSAGE value="add fraud microservice" />
     <MESSAGE value="implement a service discovery using eureka" />
     <option name="LAST_COMMIT_MESSAGE" value="implement a service discovery using eureka" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/amqp/src/main/java/com/neucloncorporation/amqp/RabbitMQMessageProducer.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

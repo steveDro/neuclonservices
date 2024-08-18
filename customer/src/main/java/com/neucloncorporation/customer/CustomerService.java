@@ -1,10 +1,12 @@
 package com.neucloncorporation.customer;
 
+import com.neucloncorporation.amqp.RabbitMQMessageProducer;
 import com.neucloncorporation.clients.fraud.FraudCheckResponse;
 import com.neucloncorporation.clients.fraud.FraudClient;
 import com.neucloncorporation.clients.notification.NotificationClient;
 import com.neucloncorporation.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,6 +18,7 @@ public class CustomerService {
 //    private final RestTemplate restTemplate;
     private final FraudClient fraudClient;
     private final NotificationClient notificationClient;
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -35,11 +38,17 @@ public class CustomerService {
         if (fraudCheckResponse.isFraudster()) throw new IllegalStateException("fraudster");
 
 //        send notification
-        notificationClient.sendNotification( new NotificationRequest(
-                   customer.getId(),
-                   customer.getEmail(),
-                   String.format("Hi %s, welcome to neucloncorporation....", customer.getFirstName())
-           ));
+        NotificationRequest notificationRequest = new NotificationRequest(
+                customer.getId(),
+                customer.getEmail(),
+                String.format("Hi %s, welcome to neucloncorporation....", customer.getFirstName())
+        );
 
+//        notificationClient.sendNotification(notificationRequest);
+         rabbitMQMessageProducer.publish(
+                 notificationRequest,
+                 "internal.exchange",
+                 "internal.notification.routing-key"
+         );
     }
 }
